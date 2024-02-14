@@ -1,10 +1,11 @@
+import {Top} from "./components/Top.tsx";
 function App() {
 
   return (
     <>
-      <div className="">
-        <h1 className="text-white">Hello</h1>
-      </div>
+        <header>
+            <Top/>
+        </header>
     </>
   )
 }
