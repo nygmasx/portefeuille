@@ -1,4 +1,4 @@
-import {CgMenuGridO, CgMenuGridR} from "react-icons/cg";
+import {CgMenuGridO} from "react-icons/cg";
 
 export const Navbar = () => {
 
