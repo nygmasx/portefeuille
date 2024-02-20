@@ -28,14 +28,14 @@ export const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-center p-4 w-full">
-                <div className="w-[25%] flex justify-center items-center">
+            <div className="flex justify-center py-4 px-12 w-full">
+                <div className="w-[25%] flex  items-center">
                     <img src="logo-is.png" alt=""/>
                     <h1 className="text-3xl font-bold font-anta ml-4">Nygma</h1>
                 </div>
                 <div className="w-[50%] flex items-center justify-center">
                     <ul className="flex overflow-hidden justify-center items-center border-[1px] rounded-[80px]
-                     w-[650px] border-gray-700 bg-[#141414] h-[70px]">
+                     w-[650px] border-gray-700 bg-[#141414] h-[70px] sticky">
                         {links.map(({id, link, href}) => (
                             <li key={id} className="w-[90%] m-4">
                                 <a className="flex text-center text-[16px] font-light justify-center items-center
@@ -46,7 +46,7 @@ export const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="w-[25%] flex justify-center items-center">
+                <div className="w-[25%] flex justify-end items-center">
                     <a className="m-2" href=""><BsGithub className="text-3xl text-emerald-400"/></a>
                     <a className="m-2" href=""><FaXTwitter className="text-3xl text-emerald-400"/></a>
                     <a className="m-2" href=""><FaLinkedin className="text-3xl text-emerald-400"/></a>

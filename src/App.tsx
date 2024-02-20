@@ -1,4 +1,5 @@
 import {Navbar} from "./components/Navbar.tsx";
+import {Main} from "./components/Main.tsx";
 function App() {
 
   return (
@@ -6,6 +7,7 @@ function App() {
         <header>
             <Navbar/>
         </header>
+        <Main/>
     </>
   )
 }
