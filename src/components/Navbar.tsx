@@ -1,46 +1,57 @@
-import {CgMenuGridO} from "react-icons/cg";
+import {BsGithub} from "react-icons/bs";
+import {FaLinkedin, FaXTwitter} from "react-icons/fa6";
+
 export const Navbar = () => {
 
     const links = [
         {
             id: 1,
-            link: 'Projects',
+            link: 'Home',
             href: '#home'
         },
         {
             id: 2,
-            link: 'Social Hub',
+            link: 'About',
             href: '#about'
         },
         {
             id: 3,
-            link: 'Affiliate',
+            link: 'Projects',
             href: '#projects'
         },
         {
             id: 4,
-            link: 'Documentation',
-            href: '#contact'
-        },
-        {
-            id: 5,
-            link: 'Community',
+            link: 'Contact',
             href: '#contact'
         },
     ]
 
-    return(
+    return (
         <>
-            <div className="flex mt-4">
-                <ul className="flex overflow-hidden">
-                    {links.map(({id, link, href}) => (
-                    <li key={id} className="w-[90%] ml-4">
-                        <a className="flex text-center text-xl justify-center items-center px-4 py-2 bg-blue-600 rounded-3xl" href={href}>
-                            <CgMenuGridO className=" mt-0.5 text-3xl mr-1"/> {link}
-                        </a>
-                    </li>
-                    ))}
-                </ul>
+            <div className="flex justify-center p-4 w-full">
+                <div className="w-[25%] flex justify-center items-center">
+                    <img src="logo-is.png" alt=""/>
+                    <h1 className="text-3xl font-bold font-anta ml-4">Nygma</h1>
+                </div>
+                <div className="w-[50%] flex items-center justify-center">
+                    <ul className="flex overflow-hidden justify-center items-center border-[1px] rounded-[80px]
+                     w-[650px] border-gray-700 bg-[#141414] h-[70px]">
+                        {links.map(({id, link, href}) => (
+                            <li key={id} className="w-[90%] m-4">
+                                <a className="flex text-center text-[16px] font-light justify-center items-center
+                                bg-[#1D1D1D] py-2.5 px-3 rounded-[80px] border-[1px] border-neutral-700"
+                                   href={href}>{link}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="w-[25%] flex justify-center items-center">
+                    <a className="m-2" href=""><BsGithub className="text-3xl text-emerald-400"/></a>
+                    <a className="m-2" href=""><FaXTwitter className="text-3xl text-emerald-400"/></a>
+                    <a className="m-2" href=""><FaLinkedin className="text-3xl text-emerald-400"/></a>
+                </div>
+
             </div>
         </>
     )

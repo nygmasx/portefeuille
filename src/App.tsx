@@ -1,10 +1,10 @@
-import {Top} from "./components/Top.tsx";
+import {Navbar} from "./components/Navbar.tsx";
 function App() {
 
   return (
     <>
         <header>
-            <Top/>
+            <Navbar/>
         </header>
     </>
   )
