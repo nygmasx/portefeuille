@@ -6,9 +6,14 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'anta': ['"Anta", sans-serif']
+      'anta': ['"Anta", sans-serif'],
+      'poppins': ['"Poppins", sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'gb': "url('/public/bg-final.png')",
+      }
+    },
   },
   plugins: [],
 }
