@@ -36,7 +36,7 @@ export const Navbar = () => {
                 </div>
                 <div className="w-[50%] flex items-center justify-center">
                     <ul className="flex overflow-hidden justify-center items-center border-[1px] rounded-[80px]
-                     w-[650px] border-gray-700 bg-[#141414] h-[70px] fixed ">
+                     w-[650px] border-gray-700 bg-[#141414] h-[70px] fixed z-50 ">
                         {links.map(({id, link, href}) => (
                             <li key={id} className="w-[90%] m-4">
                                 <motion.a whileHover={{scale: 1.05}} className="flex text-center text-[16px] font-light justify-center items-center

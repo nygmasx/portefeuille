@@ -1,5 +1,6 @@
 import {Navbar} from "./components/Navbar.tsx";
 import {Main} from "./components/Main.tsx";
+import {About} from "@/components/About.tsx";
 function App() {
 
   return (
@@ -7,7 +8,11 @@ function App() {
         <header>
             <Navbar/>
         </header>
-        <Main/>
+        <main className="">
+            <Main/>
+            <About/>
+        </main>
+
     </>
   )
 }

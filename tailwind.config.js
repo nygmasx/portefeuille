@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gb': "url('/public/bg-final.png')",
+        'gr': "url('/public/macx.jpg')",
       },
       keyframes: {
         "accordion-down": {

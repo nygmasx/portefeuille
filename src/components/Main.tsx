@@ -5,10 +5,11 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
 export const Main = () => {
 
     return(
-        <main className="flex justify-center">
+        <section id="home" className="flex justify-center">
             <div className="w-full max-w-[90%] py-10">
                 <div className='w-full flex gap-5'>
-                    <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
+                    <motion.div
+                        whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
                         className="w-[50%] h-[550px] flex justify-center items-center rounded-[64px] bg-gb bg-cover bg-center ">
                         <div className="w-full max-w-[90%] h-full max-h-[90%] flex flex-col">
                             <h1 className="text-[32px] font-poppins max-w-[90%]">
@@ -46,12 +47,12 @@ export const Main = () => {
                         </motion.div>
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
                             className="col-span-2 rounded-[64px] max-w-full h-full bg-[#1D1D1D] flex justify-center items-center">
-                            <div className="w-full max-w-[85%] h-full max-h-[80%] flex flex-col">
+                            <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className=" flex items-center 2xl:text-[24px] text-[22px] font-poppins">
                                         Last use cases on
                                         <FaXTwitter className="ml-1"/></h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="https://twitter.com/nygmasl"><AiOutlineLink className="hover:text-emerald-300" /></motion.a>
                                 </div>
                                 <p>
                                     Sometimes i like to build things on public
@@ -70,13 +71,15 @@ export const Main = () => {
                                     </div>
                                 </div>
                                 <div className="flex justify-center mt-8">
-                                    <a className="flex items-center px-6 py-1 border rounded" href="">Read My <FaXTwitter className="ml-1"/></a>
+                                    <a className="flex items-center px-8 py-2 border rounded-[100px] hover:text-emerald-300" target='_blank' href="https://twitter.com/nygmasl">
+                                        Read My <motion.span  whileHover={{ scale: 1.2, rotate: 360 }}><FaXTwitter className="ml-1"/></motion.span>
+                                    </a>
                                 </div>
                             </div>
                         </motion.div>
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
     )
 }
