@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import {AiOutlineLink} from "react-icons/ai";
 import {FaXTwitter} from "react-icons/fa6";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
 export const Main = () => {
 
     return(
@@ -39,7 +40,7 @@ export const Main = () => {
                                 </div>
                                 <hr className="w-full h-px mt-4 mb-6 border-0 bg-gray-300"/>
                                 <p>
-                                    I'm a Fullstack Web Developer
+                                    I'm a Web enthusiast,  aiding businesses and startups in bringing their visions to life by developing custom ERPs, CRMs, and SaaS platforms.
                                 </p>
                             </div>
                         </motion.div>
@@ -55,6 +56,12 @@ export const Main = () => {
                                 <p>
                                     Take a look, there is a bunch of projects that you can like
                                 </p>
+                                <hr className="w-full h-px mt-4 mb-6 border-0 bg-gray-300"/>
+                                <Avatar>
+                                    <AvatarImage src="https://pbs.twimg.com/profile_images/1638294304719347712/w7Sf9nsH_400x400.jpg" alt="nygmapfp"/>
+                                    <AvatarFallback></AvatarFallback>
+                                </Avatar>
+
                             </div>
                         </motion.div>
                     </div>
