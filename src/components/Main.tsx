@@ -1,10 +1,11 @@
-import { motion } from "framer-motion"
+import {motion} from "framer-motion"
 import {AiOutlineLink} from "react-icons/ai";
 import {FaXTwitter} from "react-icons/fa6";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
+
 export const Main = () => {
 
-    return(
+    return (
         <section id="home" className="flex justify-center">
             <div className="w-full max-w-[90%] py-10">
                 <div className='w-full flex gap-5'>
@@ -21,7 +22,7 @@ export const Main = () => {
                     </motion.div>
                     <div className="w-[50%] grid grid-cols-4 gap-4">
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                            className="col-span-4 rounded-[64px] h-48 bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-4 rounded-[64px] h-48 bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">See my last projects</h2>
@@ -33,7 +34,7 @@ export const Main = () => {
                             </div>
                         </motion.div>
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                            className="col-span-2 rounded-[64px] max-w-full h-[340px] bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-2 rounded-[64px] max-w-full h-[340px] bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Who am I ?</h2>
@@ -41,18 +42,20 @@ export const Main = () => {
                                 </div>
                                 <hr className="w-full h-px mt-4 mb-6 border-0 bg-gray-300"/>
                                 <p>
-                                    I'm a Web enthusiast,  aiding businesses and startups in bringing their visions to life by developing custom ERPs, CRMs, and SaaS platforms.
+                                    I'm a Web enthusiast, aiding businesses and startups in bringing their visions to
+                                    life by developing custom ERPs, CRMs, and SaaS platforms.
                                 </p>
                             </div>
                         </motion.div>
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                            className="col-span-2 rounded-[64px] max-w-full h-full bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-2 rounded-[64px] max-w-full h-full bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className=" flex items-center 2xl:text-[24px] text-[22px] font-poppins">
                                         Last use cases on
                                         <FaXTwitter className="ml-1"/></h2>
-                                    <motion.a whileHover={{scale: 1.2}} href="https://twitter.com/nygmasl"><AiOutlineLink className="hover:text-emerald-300" /></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="https://twitter.com/nygmasl">
+                                        <AiOutlineLink className="hover:text-emerald-300"/></motion.a>
                                 </div>
                                 <p>
                                     Sometimes i like to build things on public
@@ -71,9 +74,12 @@ export const Main = () => {
                                     </div>
                                 </div>
                                 <div className="flex justify-center mt-8">
-                                    <a className="flex items-center px-8 py-2 border rounded-[100px] hover:text-emerald-300" target='_blank' href="https://twitter.com/nygmasl">
-                                        Read My <motion.span  whileHover={{ scale: 1.2, rotate: 360 }}><FaXTwitter className="ml-1"/></motion.span>
-                                    </a>
+                                    <motion.a whileTap={{scale: 0.8}}
+                                              className="flex items-center px-8 py-2 border rounded-[100px] hover:text-emerald-300"
+                                              target='_blank' href="https://twitter.com/nygmasl">
+                                        Read My <motion.span whileHover={{scale: 1.2, rotate: 360}}><FaXTwitter
+                                        className="ml-1"/></motion.span>
+                                    </motion.a>
                                 </div>
                             </div>
                         </motion.div>

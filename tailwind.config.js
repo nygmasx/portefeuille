@@ -9,16 +9,17 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      'anta': ['"Anta", sans-serif'],
+      'poppins': ['"Poppins", sans-serif']
+    },
     container: {
       center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
-      fontFamily: {
-        'anta': ['"Anta", sans-serif'],
-        'poppins': ['"Poppins", sans-serif']
-      },
+
     },
     extend: {
       backgroundImage: {
