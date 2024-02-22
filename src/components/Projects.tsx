@@ -6,7 +6,7 @@ export const Projects = () => {
     return(
         <section id="projects" className="flex justify-center ">
             <div className='w-full max-w-[90%] py-10'>
-                <div className="w-full h-[500px] flex gap-4 mt-20">
+                <div className="w-full h-[550px] flex gap-4 mt-20">
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
                                 className="col-span-4 rounded-[64px] w-1/3 h-full bg-[#1D1D1D] flex justify-center items-center">
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
