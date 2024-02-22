@@ -29,7 +29,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-center py-7 px-24 w-full">
+            <div id="home" className="flex justify-center py-7 px-24 w-full">
                 <div className="w-[25%] flex  items-center">
                     <img src="logo-is.png" alt=""/>
                     <h1 className="text-3xl font-bold font-anta ml-4">Nygma</h1>

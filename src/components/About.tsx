@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {AiOutlineLink} from "react-icons/ai";
-import {FaLaravel, FaReact, FaSymfony} from "react-icons/fa6";
-import {SiRootsbedrock, SiTailwindcss, SiTurbo, SiTypescript} from "react-icons/si";
+import { FaLaravel, FaReact, FaSymfony, FaWordpress} from "react-icons/fa6";
+import { SiDocker, SiRootsbedrock, SiTailwindcss, SiTurbo, SiTypescript} from "react-icons/si";
 
 export const About = () => {
     return (
@@ -14,10 +14,14 @@ export const About = () => {
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Scraping and Automation</h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="">
+                                        <AiOutlineLink className="hover:text-emerald-300"/>
+                                    </motion.a>
                                 </div>
+                                <hr className="w-full h-px my-2 border-0 bg-gray-300"/>
                                 <p>
-                                    Take a look, there is a bunch of projects that you can like
+                                    Extracting data from web sources and automating repetitive tasks, showcasing
+                                    efficiency and accuracy improvements.
                                 </p>
                             </div>
                         </motion.div>
@@ -26,10 +30,13 @@ export const About = () => {
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Web Development</h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="">
+                                        <AiOutlineLink className="hover:text-emerald-300"/>
+                                    </motion.a>
                                 </div>
+                                <hr className="w-full h-px my-2 border-0 bg-gray-300"/>
                                 <p>
-                                    Take a look, there is a bunch of projects that you can like
+                                    Building your App / Saas MVP / user-friendly websites using the latest technologies for optimal performance and design.
                                 </p>
                             </div>
                         </motion.div>
@@ -38,10 +45,13 @@ export const About = () => {
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Wordpress Deep Customization</h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="">
+                                        <AiOutlineLink className="hover:text-emerald-300"/>
+                                    </motion.a>
                                 </div>
+                                <hr className="w-full h-px my-2 border-0 bg-gray-300"/>
                                 <p>
-                                    Take a look, there is a bunch of projects that you can like
+                                    Specific Wordpress development, creating your own customizable environment and make real professional and scalable websites.
                                 </p>
                             </div>
                         </motion.div>
@@ -57,7 +67,7 @@ export const About = () => {
                             <p className="font-medium">A solution for every problem.</p>
                             <hr className="w-[90%] h-px my-8  border-0 bg-gray-300"/>
                             <div className="mt-10 flex justify-center items-center">
-                                <div className="flex flex-wrap h-full items-center justify-around w-full gap-5">
+                                <div className="flex flex-wrap h-full items-center justify-around w-full gap-5 mt-5">
                                     <p className="text-[28px] flex text-center items-center"><FaSymfony
                                         className='mr-2'/> Symfony</p>
                                     <p className="text-[28px] flex items-center"><FaReact className='mr-2'/> React
@@ -72,9 +82,9 @@ export const About = () => {
                                     </p>
                                     <p className="text-[28px] flex items-center"><SiRootsbedrock className='mr-2'/> Bedrock
                                     </p>
-                                    <p className="text-[28px] flex items-center"><SiTurbo className='mr-2'/> Turbo.js
+                                    <p className="text-[28px] flex items-center"><FaWordpress className='mr-2'/> Wordpress
                                     </p>
-                                    <p className="text-[28px] flex items-center"><SiTailwindcss className='mr-2'/> TailwindCss
+                                    <p className="text-[28px] flex items-center"><SiDocker className='mr-2'/> Docker
                                     </p>
                                 </div>
 

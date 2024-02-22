@@ -23,8 +23,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'gb': "url('/public/bg-final.png')",
-        'gr': "url('/public/macx.jpg')",
+        'gb': "url('/bg-final.png')",
+        'gr': "url('/macx.jpg')",
       },
       keyframes: {
         "accordion-down": {

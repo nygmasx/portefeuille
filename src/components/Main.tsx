@@ -6,7 +6,7 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
 export const Main = () => {
 
     return (
-        <section id="home" className="flex justify-center">
+        <section className="flex justify-center">
             <div className="w-full max-w-[90%] py-10">
                 <div className='w-full flex gap-5'>
                     <motion.div
