@@ -87,7 +87,6 @@ export const About = () => {
                                     <p className="text-[28px] flex items-center"><SiDocker className='mr-2'/> Docker
                                     </p>
                                 </div>
-
                             </div>
                         </div>
                     </motion.div>
