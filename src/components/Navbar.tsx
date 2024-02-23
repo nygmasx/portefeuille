@@ -29,14 +29,14 @@ export const Navbar = () => {
 
     return (
         <>
-            <div id="home" className="flex justify-center py-7 px-24 w-full">
-                <div className="w-[25%] flex  items-center">
+            <div id="home" className="flex items-center justify-center py-7 lg:px-24 w-full">
+                <div className="lg:w-[25%] flex justify-center items-center">
                     <img src="logo-is.png" alt=""/>
                     <h1 className="text-3xl font-bold font-anta ml-4">Nygma</h1>
                 </div>
-                <div className="w-[50%] flex items-center justify-center">
-                    <ul className="flex overflow-hidden justify-center items-center border-[1px] rounded-[80px]
-                     w-[650px] border-gray-700 bg-[#141414] h-[70px] fixed z-50 ">
+                <div className="lg:w-[50%] flex items-center justify-center">
+                    <ul className="lg:flex overflow-hidden justify-center items-center border-[1px] rounded-[80px]
+                     w-[650px] border-gray-700 bg-[#141414] h-[70px] fixed z-50 hidden ">
                         {links.map(({id, link, href}) => (
                             <li key={id} className="w-[90%] m-4">
                                 <motion.a whileHover={{scale: 1.05}} className="flex text-center text-[16px] font-light justify-center items-center
@@ -47,7 +47,7 @@ export const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="w-[25%] flex justify-end items-center">
+                <div className="w-[25%] hidden lg:flex justify-end items-center">
                     <a className="m-2" target="_blank" href="https://github.com/nygmasx"><BsGithub className="text-3xl text-emerald-400"/></a>
                     <a className="m-2" target="_blank" href="https://twitter.com/nygmasl"><FaXTwitter className="text-3xl text-emerald-400"/></a>
                     <a className="m-2" target="_blank" href=""><FaLinkedin className="text-3xl text-emerald-400"/></a>
