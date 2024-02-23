@@ -6,11 +6,11 @@ import { SiDocker, SiRootsbedrock, SiTailwindcss, SiTurbo, SiTypescript} from "r
 export const About = () => {
     return (
         <section id="about" className="flex justify-center">
-            <div className="w-full max-w-[90%] lg:py-10 max-md:py-5">
-                <div className='w-full flex max-md:items-center max-md:flex-col-reverse gap-5'>
-                    <div className="lg:w-[50%] lg:h-[550px] flex flex-col items-center lg:gap-4 max-md:gap-5">
+            <div className="w-full max-w-[90%] lg:py-10 max-lg:py-5">
+                <div className='w-full flex max-lg:items-center max-lg:flex-col-reverse gap-5'>
+                    <div className="lg:w-[50%] lg:h-[550px] flex flex-col items-center lg:gap-4 max-lg:gap-5">
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                    className="col-span-4 rounded-[64px] max-md:w-[95%] max-md:rounded-2xl h-[280px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-4 rounded-[64px] max-lg:w-[95%] max-lg:rounded-2xl h-[280px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Scraping and Automation</h2>
@@ -26,7 +26,7 @@ export const About = () => {
                             </div>
                         </motion.div>
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                    className="col-span-4 rounded-[64px] max-md:w-[95%] max-md:rounded-2xl h-[250px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-4 rounded-[64px] max-lg:w-[95%] max-lg:rounded-2xl h-[250px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Web Development</h2>
@@ -41,7 +41,7 @@ export const About = () => {
                             </div>
                         </motion.div>
                         <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                    className="col-span-4 rounded-[64px] max-md:w-[95%] max-md:rounded-2xl h-[280px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
+                                    className="col-span-4 rounded-[64px] max-lg:w-[95%] max-lg:rounded-2xl h-[280px] lg:h-1/3 bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Wordpress Deep Customization</h2>
@@ -59,12 +59,12 @@ export const About = () => {
                     </div>
                     <motion.div
                         whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                        className="lg:w-[50%] w-[95%] lg:h-[550px] max-md:h-[400px] flex justify-center items-center lg:rounded-[64px] max-md:rounded-2xl bg-gr bg-cover bg-center ">
+                        className="lg:w-[50%] w-[95%] lg:h-[550px] max-lg:h-[400px] flex justify-center items-center lg:rounded-[64px] max-lg:rounded-2xl bg-gr bg-cover bg-center ">
                         <div className="w-full max-w-[90%] h-full max-h-[90%] flex items-center flex-col">
                             <h1 className="lg:text-[32px] text-[26px] text-center font-poppins max-w-[90%]">
                                 That's the way I can help you
                             </h1>
-                            <p className="font-medium max-md:mt-2">A solution for every problem.</p>
+                            <p className="font-medium max-lg:mt-2">A solution for every problem.</p>
                             <hr className="w-[90%] h-px my-8  border-0 bg-gray-300 lg:block hidden"/>
                             <div className="lg:mt-10 mt-2 flex justify-center items-center">
                                 <div className="flex flex-wrap h-full items-center justify-around w-full gap-5 mt-5">
