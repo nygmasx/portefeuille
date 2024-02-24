@@ -1,4 +1,4 @@
-import {easeInOut, motion, useAnimation} from "framer-motion";
+import { motion, useAnimation} from "framer-motion";
 import {AiOutlineLink} from "react-icons/ai";
 import { FaLaravel, FaReact, FaSymfony, FaWordpress} from "react-icons/fa6";
 import { SiDocker, SiRootsbedrock, SiTailwindcss, SiTurbo, SiTypescript} from "react-icons/si";
