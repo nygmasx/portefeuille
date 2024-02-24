@@ -3,6 +3,7 @@ import {Main} from "./components/Main.tsx";
 import {About} from "@/components/About.tsx";
 import {Projects} from "@/components/Projects.tsx";
 import {Contact} from "@/components/Contact.tsx";
+import {Footer} from "@/components/Footer.tsx";
 function App() {
 
   return (
@@ -16,6 +17,9 @@ function App() {
             <Projects/>
             <Contact/>
         </main>
+        <footer>
+            <Footer/>
+        </footer>
 
     </>
   )

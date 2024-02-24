@@ -25,6 +25,8 @@ module.exports = {
       backgroundImage: {
         'gb': "url('/bg-final.png')",
         'gr': "url('/macx.jpg')",
+        'ab': "url('/abstract.jpg')",
+        'ba': "url('/wallpaper-image.jpg')",
       },
       keyframes: {
         "accordion-down": {

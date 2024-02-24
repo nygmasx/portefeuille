@@ -8,9 +8,18 @@ export const Projects = () => {
     return(
         <section id="projects" className="flex justify-center ">
             <div className='w-full max-w-[90%] py-10'>
+                <div className="flex justify-center items-center w-full pb-10">
+                    <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
+                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl bg-ba bg-center lg:w-[80%] md:w-full lg:h-[200px] h-[150px] bg-[#1D1D1D] flex justify-center items-center">
+                        <div
+                            className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col justify-center items-center">
+                            <p className="text-[32px] text-center font-poppins font-semibold">Some of my projects 🚀</p>
+                        </div>
+                    </motion.div>
+                </div>
                 <div className="w-full lg:h-[550px] flex max-lg:items-center max-lg:flex-col gap-5">
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 max-lg:h-[550px] bg-[#1D1D1D] flex justify-center items-center">
+                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 max-md:h-[550px] max-lg:h-[700px] bg-[#1D1D1D] flex justify-center items-center">
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">Creatik</h2>
@@ -34,7 +43,7 @@ export const Projects = () => {
                         </div>
                     </motion.div>
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 max-lg:h-[550px] bg-[#1D1D1D] flex justify-center items-center">
+                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 max-md:h-[550px] max-lg:h-[700px] bg-[#1D1D1D] flex justify-center items-center">
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">SmartLetter</h2>
@@ -58,7 +67,7 @@ export const Projects = () => {
                         </div>
                     </motion.div>
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
-                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 lg:h-full max-lg:h-[550px] bg-[#1D1D1D] flex justify-center items-center">
+                                className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 w-full max-lg:h-[550px] bg-[#1D1D1D] flex justify-center items-center">
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">Schoolindex</h2>
