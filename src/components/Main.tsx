@@ -7,20 +7,25 @@ export const Main = () => {
     return (
         <section className="flex justify-center">
             <div className="w-full max-w-[90%] lg:py-10 max-lg:py-3">
-                <div className='w-full flex max-lg:items-center max-lg:flex-col gap-5'>
+                <motion.div initial={{ opacity: 0}}
+                            animate={{ opacity: 1 }}  className='w-full flex max-lg:items-center max-lg:flex-col gap-5'>
                     <motion.div
-                        whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
+
+                        whileHover={{scale: 1.02}}
+                        transition={{ ease: "easeOut" }}
                         className="lg:w-[50%] w-[95%] lg:h-[550px] max-lg:h-[400px] flex justify-center items-center lg:rounded-[64px] max-lg:rounded-2xl bg-gb bg-cover bg-center ">
                         <div className="w-full max-w-[90%] h-full max-h-[90%] flex flex-col">
                             <h1 className="text-[32px] font-poppins max-w-[90%]">
-                                <span className="font-medium">Imrane Sallak</span> <span className="max-lg:hidden">-</span> FullStack Web Developer
+                                <span className="font-medium">Imrane Sallak</span> <span className="max-lg:hidden">-</span> <br className="hidden md:max-lg:block"/> FullStack Web Developer
                             </h1>
                             <p className="font-medium">But you can call me Nygma.</p>
                             <hr className="w-[90%] h-px my-8  border-0 bg-gray-300 hidden lg:block"/>
                         </div>
                     </motion.div>
                     <div className="lg:w-[50%] h-full flex items-center flex-col gap-5 lg:grid lg:grid-cols-4 lg:gap-4">
-                        <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
+                        <motion.div initial={{ opacity: 0}}
+                                    animate={{ opacity: 1 }}
+                                    whileHover={{scale: 1.02}} transition={{ ease: "easeOut" }}
                                     className="col-span-4 rounded-[64px] max-lg:rounded-2xl w-[95%] lg:h-48 h-40 bg-[#1D1D1D] flex justify-center items-center">
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
@@ -84,7 +89,7 @@ export const Main = () => {
                             </div>
                         </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
