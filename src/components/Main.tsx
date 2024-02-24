@@ -1,11 +1,43 @@
-import {motion} from "framer-motion"
+import {motion, useAnimation} from "framer-motion"
 import {AiOutlineLink} from "react-icons/ai";
 import {FaXTwitter} from "react-icons/fa6";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
+import {useEffect, useRef} from "react";
 export const Main = () => {
 
+    const ref = useRef(null);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({ opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeInOut" } });
+                } else {
+                    controls.start({ opacity: 0, scale: 0.8, transition: { duration: 0.5, ease: "easeInOut" } });
+                }
+            },
+            {
+                root: null, // viewport
+                threshold: 0.1, // trigger the callback when the target is visible at least 10%
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
     return (
-        <section className="flex justify-center">
+        <motion.section ref={ref}
+                        initial={{ opacity: 0, scale: 0.8}}
+                        animate={controls} className="flex justify-center">
             <div className="w-full max-w-[90%] lg:py-10 max-lg:py-3">
                 <motion.div initial={{ opacity: 0}}
                             animate={{ opacity: 1 }}  className='w-full flex max-lg:items-center max-lg:flex-col gap-5'>
@@ -91,6 +123,6 @@ export const Main = () => {
                     </div>
                 </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }

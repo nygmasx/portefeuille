@@ -1,12 +1,47 @@
-import {motion} from "framer-motion";
+import {motion, useAnimation} from "framer-motion";
 import {AiOutlineLink} from "react-icons/ai";
 import {FaLaravel, FaReact, FaSymfony} from "react-icons/fa6";
 import {SiTailwindcss, SiTurbo} from "react-icons/si";
+import {useEffect, useRef} from "react";
 
 export const Projects = () => {
 
+    const ref = useRef(null);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({ opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeInOut" } });
+                } else {
+                    controls.start({ opacity: 0, scale: 0.8, transition: { duration: 0.5, ease: "easeInOut" } });
+                }
+            },
+            {
+                root: null, // viewport
+                threshold: 0.1, // trigger the callback when the target is visible at least 10%
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
+
     return(
-        <section id="projects" className="flex justify-center ">
+        <motion.section
+            ref={ref}
+            initial={{ opacity: 0, scale: 0.8}}
+            animate={controls}
+            id="projects" className="flex justify-center ">
             <div className='w-full max-w-[90%] py-10'>
                 <div className="flex justify-center items-center w-full pb-10">
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
@@ -90,7 +125,7 @@ export const Projects = () => {
                     </motion.div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 
 }
