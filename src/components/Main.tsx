@@ -62,9 +62,9 @@ export const Main = () => {
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">See my last projects</h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="#projects"><AiOutlineLink/></motion.a>
                                 </div>
-                                <hr className="w-[100%] lg:mt-4 my-2 h-px border-0 bg-gray-300 lg:hidden"/>
+                                <hr className="w-[100%] lg:mt-4 my-2 h-px border-0 bg-gray-300"/>
                                 <p>
                                     Take a look, there is a bunch of projects that you can like
                                 </p>
@@ -75,7 +75,7 @@ export const Main = () => {
                             <div className="w-full max-w-[85%] h-full max-h-[70%] flex flex-col">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[24px] font-poppins">Who am I ?</h2>
-                                    <motion.a whileHover={{scale: 1.2}} href=""><AiOutlineLink/></motion.a>
+                                    <motion.a whileHover={{scale: 1.2}} href="#about"><AiOutlineLink/></motion.a>
                                 </div>
                                 <hr className="w-full h-px mt-4 mb-6 border-0 bg-gray-300"/>
                                 <p>

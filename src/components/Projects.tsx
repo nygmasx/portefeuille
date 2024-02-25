@@ -58,11 +58,11 @@ export const Projects = () => {
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">Creatik</h2>
-                                <motion.a whileHover={{scale: 1.2}} href="">
+                                <motion.a whileHover={{scale: 1.2}} target="_blank" href="https://github.com/nygmasx/Creatik">
                                     <AiOutlineLink className="hover:text-emerald-300"/>
                                 </motion.a>
                             </div>
-                            <hr className="w-full h-px mt-2 mb-4 border-0 bg-gray-300"/>
+                            <hr className="w-full h-px mt-2 mb-4 border-1 bg-gray-300"/>
                             <img src="/projects/creatik1.png" alt=""/>
                             <p className="mt-4 text-wrap leading-7">
                                 You are a content creator and you want to boost your creativity ? Creatik is made for
@@ -82,7 +82,7 @@ export const Projects = () => {
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">SmartLetter</h2>
-                                <motion.a whileHover={{scale: 1.2}} href="">
+                                <motion.a whileHover={{scale: 1.2}} target="_blank" href="https://github.com/nygmasx/SmartLetter">
                                     <AiOutlineLink className="hover:text-emerald-300"/>
                                 </motion.a>
                             </div>
@@ -106,7 +106,7 @@ export const Projects = () => {
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
                             <div className="flex justify-between items-center">
                                 <h2 className="text-[24px] font-poppins">Schoolindex</h2>
-                                <motion.a whileHover={{scale: 1.2}} href="">
+                                <motion.a whileHover={{scale: 1.2}} target="_blank" href="https://github.com/nygmasx/MathIndex">
                                     <AiOutlineLink className="hover:text-emerald-300"/>
                                 </motion.a>
                             </div>
