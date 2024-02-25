@@ -50,7 +50,7 @@ export const Navbar = () => {
                 <div className="w-[25%] hidden lg:flex justify-end items-center">
                     <a className="m-2" target="_blank" href="https://github.com/nygmasx"><BsGithub className="text-3xl text-emerald-400"/></a>
                     <a className="m-2" target="_blank" href="https://twitter.com/nygmasl"><FaXTwitter className="text-3xl text-emerald-400"/></a>
-                    <a className="m-2" target="_blank" href=""><FaLinkedin className="text-3xl text-emerald-400"/></a>
+                    <a className="m-2" target="_blank" href="https://www.linkedin.com/in/imrane-sallak-115801230/"><FaLinkedin className="text-3xl text-emerald-400"/></a>
                 </div>
 
             </div>
