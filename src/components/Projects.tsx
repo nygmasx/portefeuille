@@ -52,7 +52,7 @@ export const Projects = () => {
                         </div>
                     </motion.div>
                 </div>
-                <div className="w-full lg:h-[550px] flex max-lg:items-center max-lg:flex-col gap-5">
+                <div className="w-full lg:h-[580px] flex max-lg:items-center max-lg:flex-col gap-5">
                     <motion.div whileHover={{scale: 1.02}} transition={{ease: "easeInOut"}}
                                 className="col-span-4 rounded-[64px] max-lg:rounded-2xl lg:w-1/3 max-md:h-[550px] max-lg:h-[700px] bg-[#1D1D1D] flex justify-center items-center">
                         <div className="w-full max-w-[85%] h-full max-h-[85%] flex flex-col">
